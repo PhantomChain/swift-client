@@ -27,7 +27,7 @@
 		D03F5E672103B97A00ED8884 /* ConnectionManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E662103B97A00ED8884 /* ConnectionManagerTest.swift */; };
 		D03F5E762104BC9400ED8884 /* Client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03F5E6D2104BC9300ED8884 /* Client.framework */; };
 		D03F5E8A2105053100ED8884 /* Client.h in Headers */ = {isa = PBXBuildFile; fileRef = D0DE446720F52ADF00079494 /* Client.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D03F5E8B2105056100ED8884 /* ArkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DE448C20F6941900079494 /* ArkError.swift */; };
+		D03F5E8B2105056100ED8884 /* PhantomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DE448C20F6941900079494 /* PhantomError.swift */; };
 		D03F5E8C2105056100ED8884 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DE448620F53A8E00079494 /* Connection.swift */; };
 		D03F5E8D2105056100ED8884 /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E642103B04500ED8884 /* ConnectionManager.swift */; };
 		D03F5E8E2105056100ED8884 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5DF120F908FC00ED8884 /* Util.swift */; };
@@ -53,7 +53,7 @@
 		D0DE448320F5377100079494 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0DE448120F5377000079494 /* Alamofire.framework */; };
 		D0DE448720F53A8E00079494 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DE448620F53A8E00079494 /* Connection.swift */; };
 		D0DE448B20F544C400079494 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D0DE448120F5377000079494 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D0DE448D20F6941900079494 /* ArkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DE448C20F6941900079494 /* ArkError.swift */; };
+		D0DE448D20F6941900079494 /* PhantomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DE448C20F6941900079494 /* PhantomError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,7 +116,7 @@
 		D0DE447420F52ADF00079494 /* Info-macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
 		D0DE448120F5377000079494 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/Mac/Alamofire.framework; sourceTree = "<group>"; };
 		D0DE448620F53A8E00079494 /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
-		D0DE448C20F6941900079494 /* ArkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArkError.swift; sourceTree = "<group>"; };
+		D0DE448C20F6941900079494 /* PhantomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhantomError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,7 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				D0DE447E20F52B5F00079494 /* Api */,
-				D0DE448C20F6941900079494 /* ArkError.swift */,
+				D0DE448C20F6941900079494 /* PhantomError.swift */,
 				D0DE446720F52ADF00079494 /* Client.h */,
 				D0DE448620F53A8E00079494 /* Connection.swift */,
 				D03F5E642103B04500ED8884 /* ConnectionManager.swift */,
@@ -351,7 +351,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0940;
-				ORGANIZATIONNAME = "ARK Ecosystem";
+				ORGANIZATIONNAME = "PhantomChain";
 				TargetAttributes = {
 					D03F5E6C2104BC9300ED8884 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -440,7 +440,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D03F5E8B2105056100ED8884 /* ArkError.swift in Sources */,
+				D03F5E8B2105056100ED8884 /* PhantomError.swift in Sources */,
 				D03F5E8D2105056100ED8884 /* ConnectionManager.swift in Sources */,
 				D03F5E8C2105056100ED8884 /* Connection.swift in Sources */,
 				D03F5E9D210505B100ED8884 /* Votes.swift in Sources */,
@@ -482,7 +482,7 @@
 				D03F5E1920FAC1D900ED8884 /* Transactions.swift in Sources */,
 				D03F5E1120FAB93A00ED8884 /* Peers.swift in Sources */,
 				D03F5DF220F908FC00ED8884 /* Util.swift in Sources */,
-				D0DE448D20F6941900079494 /* ArkError.swift in Sources */,
+				D0DE448D20F6941900079494 /* PhantomError.swift in Sources */,
 				D03F5E0F20FAB88D00ED8884 /* Node.swift in Sources */,
 				D03F5E0D20FAB6CD00ED8884 /* Delegates.swift in Sources */,
 			);
@@ -542,7 +542,7 @@
 					"@loader_path/Frameworks",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "io.ark.$(PROJECT_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.phantom.$(PROJECT_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -572,7 +572,7 @@
 					"@loader_path/Frameworks",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "io.ark.$(PROJECT_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.phantom.$(PROJECT_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -599,7 +599,7 @@
 					"@loader_path/Frameworks",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.ark.ClientTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.phantom.ClientTests;
 				PRODUCT_NAME = ClientTests;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 4.0;
@@ -625,7 +625,7 @@
 					"@loader_path/Frameworks",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.ark.ClientTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.phantom.ClientTests;
 				PRODUCT_NAME = ClientTests;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 4.0;
@@ -780,7 +780,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "io.ark.$(PROJECT_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.phantom.$(PROJECT_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -810,7 +810,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "io.ark.$(PROJECT_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.phantom.$(PROJECT_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 			};
@@ -832,7 +832,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.ark.ClientTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.phantom.ClientTests;
 				PRODUCT_NAME = ClientTests;
 				SWIFT_VERSION = 4.0;
 			};
@@ -854,7 +854,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.ark.ClientTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.phantom.ClientTests;
 				PRODUCT_NAME = ClientTests;
 				SWIFT_VERSION = 4.0;
 			};

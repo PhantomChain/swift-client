@@ -1,7 +1,7 @@
 // 
-// This file is part of Ark Swift Client.
+// This file is part of PHANTOM Swift Client.
 //
-// (c) Ark Ecosystem <info@ark.io>
+// (c) PhantomChain <info@phantom.org>
 //
 // For the full copyright and license information, please view the LICENSE
 // file that was distributed with this source code.
@@ -12,7 +12,7 @@ import Foundation
 /// Set headers for the requests
 let headers: HTTPHeaders = [
     "Content-Type": "application/json",
-    "User-Agent": "ark-swift-client (https://github.com/ArkEcosystem/swift-client)"
+    "User-Agent": "phantom-swift-client (https://github.com/PhantomChain/swift-client)"
 ]
 public typealias HTTPHeaders = [String: String]
 
